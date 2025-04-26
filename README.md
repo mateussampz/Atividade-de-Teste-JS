@@ -2,10 +2,10 @@
 1) Faça um programa que entre com três números, faça a média aritmética e
 mostre o resultado no navegador, elabore o script de modo que o resultado sexa
 exibido utilizando as seguintes estruturas:
-  a) Escrevendo em um elemento HTML, usando innerHTML.
-  b) Escrevendo na saída HTML usando document.write().
-  c) Escrevendo em uma caixa de alerta, usando window.alert().
-  d) Escrevendo no console do navegador, usando console.log().
+ --- a) Escrevendo em um elemento HTML, usando innerHTML.
+ --- b) Escrevendo na saída HTML usando document.write().
+ --- c) Escrevendo em uma caixa de alerta, usando window.alert().
+ --- d) Escrevendo no console do navegador, usando console.log().
 
 2) Faça um programa que entre com o nome e o salário de um funcionário e mostre
 seu novo salário, sabendo que o mesmo teve um aumento de 10%. Utilize o
