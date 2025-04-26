@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateus ex6</title>
+</head>
+<body>
+    <h2>Primeiro número:</h2>
+    <input type="number" id="N1" placeholder="Número 1"> <br> <br>
+
+    <h2>Segundo número:</h2>
+    <input type="number" id="N2" placeholder="Número 2"> <br> <br>
+    
+    <h2>Código de seleção</h2>
+    <input type="number" id="codigo" placeholder="Digite o código"> <br> <br>
+    <button onclick="calcular()">Enviar</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function calcular() {
+            var NUMERO1 = parseInt(document.getElementById('N1').value);
+            var NUMERO2 = parseInt(document.getElementById('N2').value);
+            var CODE = parseInt(document.getElementById('codigo').value);
+            var R;
+
+            if (CODE === 1) {
+                R = NUMERO1 + NUMERO2;
+            } if (CODE === 2) {
+                R = NUMERO1*NUMERO2;
+            } if (CODE === 3) {
+                R = NUMERO1/NUMERO2
+            }
+
+            document.getElementById('resultado').innerHTML = 'Seu resultado é ' + R;
+        }
+    </script>
+</body>
+</html>

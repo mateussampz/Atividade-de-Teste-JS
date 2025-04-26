@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateus ex5</title>
+</head>
+<body>
+    <h2>Sua primeira nota</h2>
+    <input type="number" id="N1" placeholder="N1"> <br> <br>
+
+    <h2>Sua segunda nota</h2>
+    <input type="number" id="N2" placeholder="N2"> <br> <br>
+    
+    <h2>Sua terceira nota</h2>
+    <input type="number" id="N3" placeholder="N3"> <br> <br>
+    <button onclick="calcular()">Enviar</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function calcular() {
+            var NOTA1 = parseInt(document.getElementById('N1').value);
+            var NOTA2 = parseInt(document.getElementById('N2').value);
+            var NOTA3 = parseInt(document.getElementById('N3').value);
+            var M = (NOTA1 + NOTA2 + NOTA3) / 3;
+            var R;
+
+            if (M >= 80) {
+                R = "Você passou!";
+            } else {
+                R = "Você foi reprovado";
+            }
+
+            document.getElementById('resultado').innerHTML = 'Seu resultado é ' + R;
+        }
+    </script>
+</body>
+</html>

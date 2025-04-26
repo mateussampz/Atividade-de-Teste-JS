@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateus ex2</title>
+</head>
+<body>
+    <h2>Qual seu nome?</h2>
+    <input type="text" name="nome" id="nome"> <br> <br>
+
+    <h2>Qual seu salário?</h2>
+    <input type="number" name="salario" id="salario"> <br><br>
+    <button onclick="media()">Enviar</button>
+
+    <p id="aumento"></p>
+
+    <script>
+        function media() {
+            var N = parseFloat(document.getElementById('nome').value);
+            var S = parseFloat(document.getElementById('salario').value);
+            var NS = S * 11 / 10;
+        document.getElementById("aumento").innerHTML = 'Seu novo salário é: ' + NS;
+        }
+    </script>
+
+</body>
+</html>

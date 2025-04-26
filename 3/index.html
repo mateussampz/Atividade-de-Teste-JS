@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateus ex3</title>
+</head>
+<body>
+    <h2>Digite dois valores inteiros</h2>
+    <input type="number" id="A" placeholder="Valor A"> <br> <br>
+    <input type="number" id="B" placeholder="Valor B"> <br> <br>
+    <button onclick="calcular()">Enviar</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function calcular() {
+            var A = parseInt(document.getElementById('A').value);
+            var B = parseInt(document.getElementById('B').value);
+            var C;
+
+            if (A === B) {
+                C = A + B;
+            } else {
+                C = A * B;
+            }
+
+            document.getElementById('resultado').innerHTML = 'O resultado é ' + C;
+        }
+    </script>
+</body>
+</html>
